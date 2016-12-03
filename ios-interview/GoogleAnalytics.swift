@@ -18,12 +18,12 @@ class GoogleAnalytics {
     
     static let sharedInstance = GoogleAnalytics()
     
-    func sendEvent(_ identifier: String, forUser userID: String, withData data: [String: String]) {
+    func sendEvent(_ identifier: String, forUser userID: String, withData data: [String : String]) {
         GoogleAnalyticsSDK.sharedInstance.sendEvent(identifier, forUser: userID, withData: data)
     }
     
     // convenience methods
-    func login(userID: String, withData data: [String: String]) {
+    func login(userID: String, withData data: [String : String]) {
         sendEvent(GoogleAnalyticsProperty.Login.rawValue, forUser: userID, withData: data)
     }
 }

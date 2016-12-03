@@ -8,25 +8,20 @@
 import UIKit
 
 class ViewController: UIViewController {
+    // MARK: Variables
+    // *leaving these vars here but best to move out of vc
+    var userID = "HSUSER_234234"
+    var sessionID = "HSSESSION_123111"
+    
     // MARK: Actions
 
     @IBAction func login(_ sender: UIButton) {
         // Send login event to Google Analytics and Snowplow.
-//        GoogleAnalyticsSDK.sharedInstance.sendEvent("login", forUser: "HSUSER_234234", withData: [
-//            "buttonColor": "blue"
-//        ])
-        GoogleAnalytics.sharedInstance.login(userID: "HSUSER_234234", withData: ["buttonColor": "blue"])
-//        SnowplowSDK.sharedInstance.dispatchEvent("log_in", withPayload: [
-//            "userID": "HSUSER_234234"
-//        ])
-        SnowPlow.sharedInstance.login(payload: ["userID": "HSUSER_234234"])
-        
+        AnalyticsTracker.sharedInstance.trackLogin(userID: userID, data: ["buttonColor": "blue"])
     }
 
     @IBAction func completeMeditation(_ sender: UIButton) {
-        // Send meditation completion event to Google Analytics
-        GoogleAnalyticsSDK.sharedInstance.sendEvent("completeMeditation", forUser: "HSUSER_234234", withData: [
-            "sessionID": "HSSESSION_123111"
-        ])
+        // Send meditation completion event to Snowplow
+        AnalyticsTracker.sharedInstance.trackMeditationComplete(userID: userID, sessionID: sessionID)
     }
 }
