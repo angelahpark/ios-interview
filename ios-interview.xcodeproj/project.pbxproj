@@ -14,6 +14,9 @@
 		7CFB28621DD255F100443606 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7CFB28601DD255F100443606 /* LaunchScreen.storyboard */; };
 		7CFB286D1DD255F100443606 /* ios_interviewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CFB286C1DD255F100443606 /* ios_interviewTests.swift */; };
 		7CFB28781DD265F600443606 /* AnalyticsSDKs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CFB28771DD265F600443606 /* AnalyticsSDKs.swift */; };
+		BDF22AFD1DF25A75009B9CC3 /* GoogleAnalytics.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDF22AFC1DF25A75009B9CC3 /* GoogleAnalytics.swift */; };
+		BDF22AFF1DF25AD3009B9CC3 /* SnowplowAnalytics.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDF22AFE1DF25AD3009B9CC3 /* SnowplowAnalytics.swift */; };
+		BDF22B011DF26465009B9CC3 /* AnalyticsTracker.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDF22B001DF26465009B9CC3 /* AnalyticsTracker.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +41,9 @@
 		7CFB286C1DD255F100443606 /* ios_interviewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ios_interviewTests.swift; sourceTree = "<group>"; };
 		7CFB286E1DD255F100443606 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7CFB28771DD265F600443606 /* AnalyticsSDKs.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnalyticsSDKs.swift; sourceTree = "<group>"; };
+		BDF22AFC1DF25A75009B9CC3 /* GoogleAnalytics.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GoogleAnalytics.swift; sourceTree = "<group>"; };
+		BDF22AFE1DF25AD3009B9CC3 /* SnowplowAnalytics.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SnowplowAnalytics.swift; sourceTree = "<group>"; };
+		BDF22B001DF26465009B9CC3 /* AnalyticsTracker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnalyticsTracker.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +86,7 @@
 			isa = PBXGroup;
 			children = (
 				7CFB28571DD255F100443606 /* AppDelegate.swift */,
+				BDF22B021DF26601009B9CC3 /* Analytics */,
 				7CFB28591DD255F100443606 /* ViewController.swift */,
 				7CFB285B1DD255F100443606 /* Main.storyboard */,
 				7CFB28771DD265F600443606 /* AnalyticsSDKs.swift */,
@@ -97,6 +104,16 @@
 				7CFB286E1DD255F100443606 /* Info.plist */,
 			);
 			path = "ios-interviewTests";
+			sourceTree = "<group>";
+		};
+		BDF22B021DF26601009B9CC3 /* Analytics */ = {
+			isa = PBXGroup;
+			children = (
+				BDF22AFC1DF25A75009B9CC3 /* GoogleAnalytics.swift */,
+				BDF22AFE1DF25AD3009B9CC3 /* SnowplowAnalytics.swift */,
+				BDF22B001DF26465009B9CC3 /* AnalyticsTracker.swift */,
+			);
+			name = Analytics;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -203,8 +220,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				7CFB28781DD265F600443606 /* AnalyticsSDKs.swift in Sources */,
+				BDF22B011DF26465009B9CC3 /* AnalyticsTracker.swift in Sources */,
+				BDF22AFD1DF25A75009B9CC3 /* GoogleAnalytics.swift in Sources */,
 				7CFB285A1DD255F100443606 /* ViewController.swift in Sources */,
 				7CFB28581DD255F100443606 /* AppDelegate.swift in Sources */,
+				BDF22AFF1DF25AD3009B9CC3 /* SnowplowAnalytics.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -408,6 +428,7 @@
 				7CFB28731DD255F100443606 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		7CFB28741DD255F100443606 /* Build configuration list for PBXNativeTarget "ios-interviewTests" */ = {
 			isa = XCConfigurationList;
@@ -416,6 +437,7 @@
 				7CFB28761DD255F100443606 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

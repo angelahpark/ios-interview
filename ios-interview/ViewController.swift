@@ -12,9 +12,10 @@ class ViewController: UIViewController {
 
     @IBAction func login(_ sender: UIButton) {
         // Send login event to Google Analytics and Snowplow.
-        GoogleAnalyticsSDK.sharedInstance.sendEvent("login", forUser: "HSUSER_234234", withData: [
-            "buttonColor": "blue"
-        ])
+//        GoogleAnalyticsSDK.sharedInstance.sendEvent("login", forUser: "HSUSER_234234", withData: [
+//            "buttonColor": "blue"
+//        ])
+        GoogleAnalytics.sharedInstance.login(userID: "HSUSER_234234", withData: ["buttonColor": "blue"])
         SnowplowSDK.sharedInstance.dispatchEvent("log_in", withPayload: [
             "userID": "HSUSER_234234"
         ])
