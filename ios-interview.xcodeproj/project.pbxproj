@@ -14,9 +14,9 @@
 		7CFB28621DD255F100443606 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7CFB28601DD255F100443606 /* LaunchScreen.storyboard */; };
 		7CFB286D1DD255F100443606 /* ios_interviewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CFB286C1DD255F100443606 /* ios_interviewTests.swift */; };
 		7CFB28781DD265F600443606 /* AnalyticsSDKs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CFB28771DD265F600443606 /* AnalyticsSDKs.swift */; };
-		BDF22AFD1DF25A75009B9CC3 /* GoogleAnalytics.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDF22AFC1DF25A75009B9CC3 /* GoogleAnalytics.swift */; };
-		BDF22AFF1DF25AD3009B9CC3 /* Snowplow.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDF22AFE1DF25AD3009B9CC3 /* Snowplow.swift */; };
-		BDF22B011DF26465009B9CC3 /* AnalyticsTracker.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDF22B001DF26465009B9CC3 /* AnalyticsTracker.swift */; };
+		BDB3D1DD1DF2778D004F297E /* GoogleAnalytics.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDB3D1DC1DF2778D004F297E /* GoogleAnalytics.swift */; };
+		BDB3D1DF1DF277AC004F297E /* Snowplow.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDB3D1DE1DF277AC004F297E /* Snowplow.swift */; };
+		BDB3D1E11DF277BE004F297E /* AnalyticsTracker.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDB3D1E01DF277BE004F297E /* AnalyticsTracker.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,9 +41,9 @@
 		7CFB286C1DD255F100443606 /* ios_interviewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ios_interviewTests.swift; sourceTree = "<group>"; };
 		7CFB286E1DD255F100443606 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7CFB28771DD265F600443606 /* AnalyticsSDKs.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnalyticsSDKs.swift; sourceTree = "<group>"; };
-		BDF22AFC1DF25A75009B9CC3 /* GoogleAnalytics.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GoogleAnalytics.swift; sourceTree = "<group>"; };
-		BDF22AFE1DF25AD3009B9CC3 /* Snowplow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Snowplow.swift; sourceTree = "<group>"; };
-		BDF22B001DF26465009B9CC3 /* AnalyticsTracker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnalyticsTracker.swift; sourceTree = "<group>"; };
+		BDB3D1DC1DF2778D004F297E /* GoogleAnalytics.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GoogleAnalytics.swift; path = Analytics/GoogleAnalytics.swift; sourceTree = "<group>"; };
+		BDB3D1DE1DF277AC004F297E /* Snowplow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Snowplow.swift; path = Analytics/Snowplow.swift; sourceTree = "<group>"; };
+		BDB3D1E01DF277BE004F297E /* AnalyticsTracker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AnalyticsTracker.swift; path = Analytics/AnalyticsTracker.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,9 +109,9 @@
 		BDF22B021DF26601009B9CC3 /* Analytics */ = {
 			isa = PBXGroup;
 			children = (
-				BDF22AFC1DF25A75009B9CC3 /* GoogleAnalytics.swift */,
-				BDF22AFE1DF25AD3009B9CC3 /* Snowplow.swift */,
-				BDF22B001DF26465009B9CC3 /* AnalyticsTracker.swift */,
+				BDB3D1DC1DF2778D004F297E /* GoogleAnalytics.swift */,
+				BDB3D1DE1DF277AC004F297E /* Snowplow.swift */,
+				BDB3D1E01DF277BE004F297E /* AnalyticsTracker.swift */,
 			);
 			name = Analytics;
 			sourceTree = "<group>";
@@ -220,11 +220,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				7CFB28781DD265F600443606 /* AnalyticsSDKs.swift in Sources */,
-				BDF22B011DF26465009B9CC3 /* AnalyticsTracker.swift in Sources */,
-				BDF22AFD1DF25A75009B9CC3 /* GoogleAnalytics.swift in Sources */,
+				BDB3D1DF1DF277AC004F297E /* Snowplow.swift in Sources */,
 				7CFB285A1DD255F100443606 /* ViewController.swift in Sources */,
+				BDB3D1DD1DF2778D004F297E /* GoogleAnalytics.swift in Sources */,
 				7CFB28581DD255F100443606 /* AppDelegate.swift in Sources */,
-				BDF22AFF1DF25AD3009B9CC3 /* Snowplow.swift in Sources */,
+				BDB3D1E11DF277BE004F297E /* AnalyticsTracker.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
