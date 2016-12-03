@@ -16,9 +16,11 @@ class ViewController: UIViewController {
 //            "buttonColor": "blue"
 //        ])
         GoogleAnalytics.sharedInstance.login(userID: "HSUSER_234234", withData: ["buttonColor": "blue"])
-        SnowplowSDK.sharedInstance.dispatchEvent("log_in", withPayload: [
-            "userID": "HSUSER_234234"
-        ])
+//        SnowplowSDK.sharedInstance.dispatchEvent("log_in", withPayload: [
+//            "userID": "HSUSER_234234"
+//        ])
+        SnowPlow.sharedInstance.login(payload: ["userID": "HSUSER_234234"])
+        
     }
 
     @IBAction func completeMeditation(_ sender: UIButton) {
